@@ -1,12 +1,12 @@
 # MAB Modules - GitHub Pages Deployment Guide
 
-## ✅ Deployment Status: COMPLETE
+## ✅ Deployment Status: LIVE
 
-The `gh-pages` branch has been successfully created and pushed to GitHub.
+The website is now **LIVE** and accessible to everyone!
 
-**Branch**: `gh-pages`  
+**Live URL**: https://mounirtms.github.io/mab-modules  
 **Repository**: https://github.com/mounirtms/mab-modules  
-**Commit**: 7cad2d7
+**Status**: Deployed via GitHub Actions (main branch)
 
 ---
 
@@ -185,19 +185,24 @@ Add Google Analytics to `index.html`:
 git clone https://github.com/mounirtms/mab-modules.git
 cd mab-modules
 
-# Switch to gh-pages branch
-git checkout gh-pages
-
-# Make your changes
+# Make your changes on main branch
 # Edit files in the root directory
 
 # Commit and push
 git add -A
 git commit -m "Update: describe your changes"
-git push origin gh-pages
+git push origin main
 ```
 
-GitHub Pages will automatically rebuild your site (usually within 1-3 minutes).
+GitHub Actions will automatically rebuild your site (usually within 1-3 minutes).
+
+### Deployment Workflow
+
+The site uses GitHub Actions for deployment:
+1. Push changes to `main` branch
+2. GitHub Actions workflow triggers automatically
+3. Site is built and deployed to GitHub Pages
+4. Changes are live within 1-3 minutes
 
 ---
 
@@ -243,9 +248,9 @@ Copy an existing module card and update:
 
 ### Site Not Showing Up?
 1. Wait 3-5 minutes after pushing
-2. Check GitHub Actions tab for build errors
-3. Verify gh-pages branch is selected in settings
-4. Check for Jekyll build errors in console
+2. Check GitHub Actions tab for build errors: https://github.com/mounirtms/mab-modules/actions
+3. Verify workflow completed successfully
+4. Hard refresh your browser (Ctrl+Shift+R)
 
 ### Styles Not Loading?
 1. Verify file paths are correct
