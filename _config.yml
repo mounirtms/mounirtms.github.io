@@ -1,0 +1,21 @@
+title: MAB Modules - Professional Magento 2 Extensions
+description: 28 professional Magento 2 extensions designed for the Algerian e-commerce market
+url: "https://mounirtms.github.io"
+baseurl: "/mab-modules"
+repository: mounirtms/mab-modules
+
+theme: null
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null
+
+exclude:
+  - README.md
+  - WEBSITE_CONTENT_GUIDE.md
+  - MAB_MODULES_COMPREHENSIVE_REPORT.md
+  - LICENSE
+  - .gitignore
+  - .github/
