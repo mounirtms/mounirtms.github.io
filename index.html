@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAB Modules - Professional Magento 2 Extensions for Algeria</title>
+    <title>MAB Modules - Professional Magento 2 Extensions</title>
     <meta name="description" content="28 professional Magento 2 extensions designed for the Algerian e-commerce market. Yalidine shipping, multi-source inventory, enhanced checkout, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -12,130 +15,215 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h1>MAB Modules</h1>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                        <path d="M12 28V14L20 22L28 14V28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                <stop stop-color="#4F46E5"/>
+                                <stop offset="1" stop-color="#7C3AED"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="brand-text">MAB Modules</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#modules">Modules</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="#modules" data-i18n="nav.modules">Modules</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="en" title="English">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span class="lang-label">EN</span>
+                    </button>
+                    <button class="lang-btn" data-lang="fr" title="Français">
+                        <span class="lang-flag">🇫🇷</span>
+                        <span class="lang-label">FR</span>
+                    </button>
+                    <button class="lang-btn" data-lang="ar" title="العربية">
+                        <span class="lang-flag">🇩🇿</span>
+                        <span class="lang-label">AR</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#modules" data-i18n="nav.modules">Modules</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="mobile-lang-switcher">
+            <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+            <button class="lang-btn" data-lang="ar">🇩🇿 AR</button>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-pattern"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Professional Magento 2 Extensions</h1>
-                <h2>Built for the Algerian Market</h2>
-                <p class="hero-description">
-                    28 powerful modules designed specifically for Algerian e-commerce businesses. 
-                    From Yalidine shipping integration to multi-source inventory management, 
-                    we've got your store covered.
+                <div class="hero-badge" data-i18n="hero.badge">Trusted by Algerian E-commerce Businesses</div>
+                <h1 data-i18n="hero.title">Professional Magento 2 Extensions</h1>
+                <h2 data-i18n="hero.subtitle">Built for the Algerian Market</h2>
+                <p class="hero-description" data-i18n="hero.description">
+                    28 powerful modules designed specifically for Algerian e-commerce businesses. From Yalidine shipping integration to multi-source inventory management, we've got your store covered.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#modules" class="btn btn-primary">Explore Modules</a>
-                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
-                    <a href="https://github.com/mounirtms/mab-modules" class="btn btn-outline" target="_blank">GitHub Repository</a>
+                    <a href="#modules" class="btn btn-primary" data-i18n="hero.cta1">Explore Modules</a>
+                    <a href="#pricing" class="btn btn-secondary" data-i18n="hero.cta2">View Pricing</a>
+                    <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-ghost" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 2.95.957.857-.238 1.767-.357 2.675-.36.91.003 1.816.122 2.675.36 1.942-1.279 2.946-.958 2.946-.958.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">28</span>
-                        <span class="stat-label">Modules</span>
+                        <span class="stat-label" data-i18n="hero.stats.modules">Modules</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">48</span>
-                        <span class="stat-label">Wilayas</span>
+                        <span class="stat-label" data-i18n="hero.stats.wilayas">Wilayas</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">165+</span>
-                        <span class="stat-label">Centers</span>
+                        <span class="stat-label" data-i18n="hero.stats.centers">Centers</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">2.4.x</span>
-                        <span class="stat-label">Magento</span>
+                        <span class="stat-label" data-i18n="hero.stats.magento">Magento</span>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 60L48 55C96 50 192 40 288 45C384 50 480 70 576 75C672 80 768 70 864 60C960 50 1056 40 1152 45C1248 50 1344 70 1392 80L1440 90V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z" fill="white"/>
+            </svg>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Key Features</h2>
+            <div class="section-header">
+                <span class="section-badge" data-i18n="features.badge">Why Choose Us</span>
+                <h2 class="section-title" data-i18n="features.title">Key Features</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">Enterprise-grade solutions built for the Algerian market</p>
+            </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>Yalidine Integration</h3>
-                    <p>Real-time shipping with 165+ centers across all 48 Algerian wilayas. Home delivery, stop desk, and pickup options.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.yalidine.title">Yalidine Integration</h3>
+                    <p data-i18n="features.yalidine.desc">Real-time shipping with 165+ centers across all 48 Algerian wilayas. Home delivery, stop desk, and pickup options.</p>
                     <ul class="feature-list">
-                        <li>✅ 165+ delivery centers</li>
-                        <li>✅ Real-time rate calculation</li>
-                        <li>✅ Cash on delivery support</li>
-                        <li>✅ Webhook tracking</li>
+                        <li data-i18n="features.yalidine.f1">165+ delivery centers</li>
+                        <li data-i18n="features.yalidine.f2">Real-time rate calculation</li>
+                        <li data-i18n="features.yalidine.f3">Cash on delivery support</li>
+                        <li data-i18n="features.yalidine.f4">Webhook tracking</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Multi-Source Inventory</h3>
-                    <p>Intelligent warehouse management with distance-based source selection and real-time stock tracking.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.msi.title">Multi-Source Inventory</h3>
+                    <p data-i18n="features.msi.desc">Intelligent warehouse management with distance-based source selection and real-time stock tracking.</p>
                     <ul class="feature-list">
-                        <li>✅ Distance-based fulfillment</li>
-                        <li>✅ Real-time synchronization</li>
-                        <li>✅ Stock alerts</li>
-                        <li>✅ Dealer contact prompts</li>
+                        <li data-i18n="features.msi.f1">Distance-based fulfillment</li>
+                        <li data-i18n="features.msi.f2">Real-time synchronization</li>
+                        <li data-i18n="features.msi.f3">Stock alerts</li>
+                        <li data-i18n="features.msi.f4">Dealer contact prompts</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
-                    <div class="feature-icon">🛒</div>
-                    <h3>Enhanced Checkout</h3>
-                    <p>Algerian address validation, pickup-source mismatch detection, modern UI/UX with mobile optimization.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.checkout.title">Enhanced Checkout</h3>
+                    <p data-i18n="features.checkout.desc">Algerian address validation, pickup-source mismatch detection, modern UI/UX with mobile optimization.</p>
                     <ul class="feature-list">
-                        <li>✅ Wilaya/commune selection</li>
-                        <li>✅ Distance matrix validation</li>
-                        <li>✅ Mobile responsive</li>
-                        <li>✅ French localization</li>
+                        <li data-i18n="features.checkout.f1">Wilaya/commune selection</li>
+                        <li data-i18n="features.checkout.f2">Distance matrix validation</li>
+                        <li data-i18n="features.checkout.f3">Mobile responsive</li>
+                        <li data-i18n="features.checkout.f4">French localization</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
-                    <div class="feature-icon">👤</div>
-                    <h3>Social Login</h3>
-                    <p>Firebase-powered social login with Google and Facebook. Seamless checkout success page integration.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.social.title">Social Login</h3>
+                    <p data-i18n="features.social.desc">Firebase-powered social login with Google and Facebook. Seamless checkout success page integration.</p>
                     <ul class="feature-list">
-                        <li>✅ Google Sign-In</li>
-                        <li>✅ Facebook Login</li>
-                        <li>✅ Firebase Authentication</li>
-                        <li>✅ Secure OAuth 2.0</li>
+                        <li data-i18n="features.social.f1">Google Sign-In</li>
+                        <li data-i18n="features.social.f2">Facebook Login</li>
+                        <li data-i18n="features.social.f3">Firebase Authentication</li>
+                        <li data-i18n="features.social.f4">Secure OAuth 2.0</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
-                    <div class="feature-icon">🔔</div>
-                    <h3>Push Notifications</h3>
-                    <p>WebPush API integration for abandoned cart recovery, order updates, and promotional campaigns.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.notifications.title">Push Notifications</h3>
+                    <p data-i18n="features.notifications.desc">WebPush API integration for abandoned cart recovery, order updates, and promotional campaigns.</p>
                     <ul class="feature-list">
-                        <li>✅ Browser push notifications</li>
-                        <li>✅ Abandoned cart recovery</li>
-                        <li>✅ Campaign management</li>
-                        <li>✅ Analytics dashboard</li>
+                        <li data-i18n="features.notifications.f1">Browser push notifications</li>
+                        <li data-i18n="features.notifications.f2">Abandoned cart recovery</li>
+                        <li data-i18n="features.notifications.f3">Campaign management</li>
+                        <li data-i18n="features.notifications.f4">Analytics dashboard</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Performance</h3>
-                    <p>Intelligent caching, CDN integration, and database optimization for sub-second page loads.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="features.performance.title">Performance</h3>
+                    <p data-i18n="features.performance.desc">Intelligent caching, CDN integration, and database optimization for sub-second page loads.</p>
                     <ul class="feature-list">
-                        <li>✅ Smart caching</li>
-                        <li>✅ Cloudflare CDN</li>
-                        <li>✅ Elasticsearch optimization</li>
-                        <li>✅ Query optimization</li>
+                        <li data-i18n="features.performance.f1">Smart caching</li>
+                        <li data-i18n="features.performance.f2">Cloudflare CDN</li>
+                        <li data-i18n="features.performance.f3">Elasticsearch optimization</li>
+                        <li data-i18n="features.performance.f4">Query optimization</li>
                     </ul>
                 </div>
             </div>
@@ -145,122 +233,150 @@
     <!-- Modules Section -->
     <section id="modules" class="modules">
         <div class="container">
-            <h2 class="section-title">Featured Modules</h2>
-            <p class="section-subtitle">Explore our most popular extensions for Algerian e-commerce</p>
-            
+            <div class="section-header">
+                <span class="section-badge" data-i18n="modules.badge">Our Products</span>
+                <h2 class="section-title" data-i18n="modules.title">Featured Modules</h2>
+                <p class="section-subtitle" data-i18n="modules.subtitle">Explore our most popular extensions for Algerian e-commerce</p>
+            </div>
+
             <div class="modules-grid">
                 <div class="module-card featured">
-                    <div class="module-badge">Most Popular</div>
+                    <div class="module-badge" data-i18n="modules.popular">Most Popular</div>
                     <div class="module-header">
-                        <h3>🚚 YalidineCarrier</h3>
-                        <span class="module-version">v2.1.0</span>
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <div class="module-info">
+                            <h3>YalidineCarrier</h3>
+                            <span class="module-version">v2.1.0</span>
+                        </div>
                     </div>
-                    <p class="module-description">Complete Yalidine Express integration with 165+ centers, real-time rates, and multi-account support.</p>
+                    <p class="module-description" data-i18n="modules.yalidine.desc">Complete Yalidine Express integration with 165+ centers, real-time rates, and multi-account support.</p>
                     <div class="module-features">
-                        <span>Home Delivery</span>
-                        <span>Stop Desk</span>
-                        <span>Source Pickup</span>
-                        <span>COD Support</span>
-                        <span>Webhooks</span>
-                        <span>48 Wilayas</span>
+                        <span data-i18n="modules.yalidine.t1">Home Delivery</span>
+                        <span data-i18n="modules.yalidine.t2">Stop Desk</span>
+                        <span data-i18n="modules.yalidine.t3">Source Pickup</span>
+                        <span data-i18n="modules.yalidine.t4">COD Support</span>
+                        <span data-i18n="modules.yalidine.t5">Webhooks</span>
+                        <span data-i18n="modules.yalidine.t6">48 Wilayas</span>
                     </div>
                     <div class="module-price">
                         <span class="price-dzd">25,000 DZD</span>
                         <span class="price-usd">$199</span>
                     </div>
                     <div class="module-actions">
-                        <a href="https://github.com/mounirtms/mab-modules/blob/gh-pages/MAB_MODULES_COMPREHENSIVE_REPORT.md" class="btn btn-small" target="_blank">Documentation</a>
-                        <a href="https://github.com/mounirtms/mab-modules" class="btn btn-small btn-outline" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-small" target="_blank" data-i18n="modules.docs">Documentation</a>
+                        <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-small btn-outline" target="_blank" data-i18n="modules.github">View on GitHub</a>
                     </div>
                 </div>
-                
+
                 <div class="module-card">
                     <div class="module-header">
-                        <h3>📦 SourceSelector</h3>
-                        <span class="module-version">v2.1.0</span>
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <div class="module-info">
+                            <h3>SourceSelector</h3>
+                            <span class="module-version">v2.1.0</span>
+                        </div>
                     </div>
-                    <p class="module-description">Intelligent multi-source inventory with distance-based selection and real-time stock alerts.</p>
+                    <p class="module-description" data-i18n="modules.source.desc">Intelligent multi-source inventory with distance-based selection and real-time stock alerts.</p>
                     <div class="module-features">
-                        <span>Distance-based</span>
-                        <span>Real-time Sync</span>
-                        <span>Stock Alerts</span>
-                        <span>Multi-warehouse</span>
+                        <span data-i18n="modules.source.f1">Distance-based</span>
+                        <span data-i18n="modules.source.f2">Real-time Sync</span>
+                        <span data-i18n="modules.source.f3">Stock Alerts</span>
+                        <span data-i18n="modules.source.f4">Multi-warehouse</span>
                     </div>
                     <div class="module-price">
                         <span class="price-dzd">18,000 DZD</span>
                         <span class="price-usd">$149</span>
                     </div>
                     <div class="module-actions">
-                        <a href="https://github.com/mounirtms/mab-modules/blob/gh-pages/MAB_MODULES_COMPREHENSIVE_REPORT.md" class="btn btn-small" target="_blank">Learn More</a>
+                        <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-small" target="_blank" data-i18n="modules.learn">Learn More</a>
                     </div>
                 </div>
-                
+
                 <div class="module-card">
                     <div class="module-header">
-                        <h3>🛒 CheckoutCustomization</h3>
-                        <span class="module-version">v2.1.0</span>
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                        </div>
+                        <div class="module-info">
+                            <h3>CheckoutCustomization</h3>
+                            <span class="module-version">v2.1.0</span>
+                        </div>
                     </div>
-                    <p class="module-description">Enhanced checkout with Algerian address validation and pickup-source mismatch detection.</p>
+                    <p class="module-description" data-i18n="modules.checkout.desc">Enhanced checkout with Algerian address validation and pickup-source mismatch detection.</p>
                     <div class="module-features">
-                        <span>Wilaya Validation</span>
-                        <span>Distance Matrix</span>
-                        <span>Mobile UI</span>
-                        <span>French Locale</span>
+                        <span data-i18n="modules.checkout.f1">Wilaya Validation</span>
+                        <span data-i18n="modules.checkout.f2">Distance Matrix</span>
+                        <span data-i18n="modules.checkout.f3">Mobile UI</span>
+                        <span data-i18n="modules.checkout.f4">French Locale</span>
                     </div>
                     <div class="module-price">
                         <span class="price-dzd">12,000 DZD</span>
                         <span class="price-usd">$99</span>
                     </div>
                     <div class="module-actions">
-                        <a href="https://github.com/mounirtms/mab-modules/blob/gh-pages/MAB_MODULES_COMPREHENSIVE_REPORT.md" class="btn btn-small" target="_blank">Learn More</a>
+                        <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-small" target="_blank" data-i18n="modules.learn">Learn More</a>
                     </div>
                 </div>
-                
+
                 <div class="module-card">
                     <div class="module-header">
-                        <h3>👤 SocialLogin</h3>
-                        <span class="module-version">v2.1.0</span>
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <div class="module-info">
+                            <h3>SocialLogin</h3>
+                            <span class="module-version">v2.1.0</span>
+                        </div>
                     </div>
-                    <p class="module-description">Firebase Authentication with Google and Facebook login for seamless customer onboarding.</p>
+                    <p class="module-description" data-i18n="modules.social.desc">Firebase Authentication with Google and Facebook login for seamless customer onboarding.</p>
                     <div class="module-features">
-                        <span>Google Sign-In</span>
-                        <span>Facebook Login</span>
-                        <span>Firebase Auth</span>
-                        <span>OAuth 2.0</span>
+                        <span data-i18n="modules.social.f1">Google Sign-In</span>
+                        <span data-i18n="modules.social.f2">Facebook Login</span>
+                        <span data-i18n="modules.social.f3">Firebase Auth</span>
+                        <span data-i18n="modules.social.f4">OAuth 2.0</span>
                     </div>
                     <div class="module-price">
                         <span class="price-dzd">10,000 DZD</span>
                         <span class="price-usd">$79</span>
                     </div>
                     <div class="module-actions">
-                        <a href="https://github.com/mounirtms/mab-modules/blob/gh-pages/MAB_MODULES_COMPREHENSIVE_REPORT.md" class="btn btn-small" target="_blank">Learn More</a>
+                        <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-small" target="_blank" data-i18n="modules.learn">Learn More</a>
                     </div>
                 </div>
-                
+
                 <div class="module-card">
                     <div class="module-header">
-                        <h3>🔔 Notifications</h3>
-                        <span class="module-version">v2.1.0</span>
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        </div>
+                        <div class="module-info">
+                            <h3>Notifications</h3>
+                            <span class="module-version">v2.1.0</span>
+                        </div>
                     </div>
-                    <p class="module-description">Push notification system for abandoned cart recovery and customer engagement campaigns.</p>
+                    <p class="module-description" data-i18n="modules.notifications.desc">Push notification system for abandoned cart recovery and customer engagement campaigns.</p>
                     <div class="module-features">
-                        <span>WebPush API</span>
-                        <span>Cart Recovery</span>
-                        <span>Campaigns</span>
-                        <span>Analytics</span>
+                        <span data-i18n="modules.notifications.f1">WebPush API</span>
+                        <span data-i18n="modules.notifications.f2">Cart Recovery</span>
+                        <span data-i18n="modules.notifications.f3">Campaigns</span>
+                        <span data-i18n="modules.notifications.f4">Analytics</span>
                     </div>
                     <div class="module-price">
                         <span class="price-dzd">12,000 DZD</span>
                         <span class="price-usd">$99</span>
                     </div>
                     <div class="module-actions">
-                        <a href="https://github.com/mounirtms/mab-modules/blob/gh-pages/MAB_MODULES_COMPREHENSIVE_REPORT.md" class="btn btn-small" target="_blank">Learn More</a>
+                        <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-small" target="_blank" data-i18n="modules.learn">Learn More</a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="view-all">
-                <a href="https://github.com/mounirtms/mab-modules" class="btn btn-primary" target="_blank">View All 28 Modules on GitHub</a>
+                <a href="https://github.com/mounirtms/mounirtms.github.io" class="btn btn-primary" target="_blank" data-i18n="modules.viewall">View All 28 Modules on GitHub</a>
             </div>
         </div>
     </section>
@@ -268,103 +384,112 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="section-title">Pricing</h2>
-            <p class="section-subtitle">Choose the perfect package for your business</p>
-            
-            <div class="pricing-tabs">
-                <button class="tab-btn active" data-tab="algeria">🇩🇿 Algerian Market (DZD)</button>
-                <button class="tab-btn" data-tab="international">🌍 International (USD)</button>
+            <div class="section-header">
+                <span class="section-badge" data-i18n="pricing.badge">Flexible Pricing</span>
+                <h2 class="section-title" data-i18n="pricing.title">Pricing</h2>
+                <p class="section-subtitle" data-i18n="pricing.subtitle">Choose the perfect package for your business</p>
             </div>
-            
+
+            <div class="pricing-tabs">
+                <button class="tab-btn active" data-tab="algeria">
+                    <span class="tab-icon">🇩🇿</span>
+                    <span data-i18n="pricing.algeria">Algerian Market (DZD)</span>
+                </button>
+                <button class="tab-btn" data-tab="international">
+                    <span class="tab-icon">🌍</span>
+                    <span data-i18n="pricing.international">International (USD)</span>
+                </button>
+            </div>
+
             <div id="algeria" class="pricing-content active">
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <h3>Starter</h3>
+                        <h3 data-i18n="pricing.starter.name">Starter</h3>
                         <div class="price">25,000 - 60,000 DZD</div>
-                        <p class="price-subtitle">Perfect for small businesses</p>
+                        <p class="price-subtitle" data-i18n="pricing.starter.subtitle">Perfect for small businesses</p>
                         <ul class="pricing-features">
-                            <li>✅ 1-3 modules</li>
-                            <li>✅ Basic configuration</li>
-                            <li>✅ Email support</li>
-                            <li>✅ 6 months updates</li>
-                            <li>✅ French localization</li>
+                            <li data-i18n="pricing.starter.f1">1-3 modules</li>
+                            <li data-i18n="pricing.starter.f2">Basic configuration</li>
+                            <li data-i18n="pricing.starter.f3">Email support</li>
+                            <li data-i18n="pricing.starter.f4">6 months updates</li>
+                            <li data-i18n="pricing.starter.f5">French localization</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="pricing.cta">Get Started</a>
                     </div>
-                    
+
                     <div class="pricing-card popular">
-                        <div class="popular-badge">Most Popular</div>
-                        <h3>Professional</h3>
+                        <div class="popular-badge" data-i18n="pricing.popular">Most Popular</div>
+                        <h3 data-i18n="pricing.professional.name">Professional</h3>
                         <div class="price">80,000 - 150,000 DZD</div>
-                        <p class="price-subtitle">For growing businesses</p>
+                        <p class="price-subtitle" data-i18n="pricing.professional.subtitle">For growing businesses</p>
                         <ul class="pricing-features">
-                            <li>✅ 5-10 modules</li>
-                            <li>✅ Priority email + chat</li>
-                            <li>✅ Advanced configuration</li>
-                            <li>✅ 12 months updates</li>
-                            <li>✅ Training session included</li>
+                            <li data-i18n="pricing.professional.f1">5-10 modules</li>
+                            <li data-i18n="pricing.professional.f2">Priority email + chat</li>
+                            <li data-i18n="pricing.professional.f3">Advanced configuration</li>
+                            <li data-i18n="pricing.professional.f4">12 months updates</li>
+                            <li data-i18n="pricing.professional.f5">Training session included</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="pricing.cta">Get Started</a>
                     </div>
-                    
+
                     <div class="pricing-card">
-                        <h3>Enterprise</h3>
+                        <h3 data-i18n="pricing.enterprise.name">Enterprise</h3>
                         <div class="price">200,000+ DZD</div>
-                        <p class="price-subtitle">For large operations</p>
+                        <p class="price-subtitle" data-i18n="pricing.enterprise.subtitle">For large operations</p>
                         <ul class="pricing-features">
-                            <li>✅ Full suite (28 modules)</li>
-                            <li>✅ Priority phone support</li>
-                            <li>✅ Custom development</li>
-                            <li>✅ 24 months updates</li>
-                            <li>✅ On-site training</li>
-                            <li>✅ Dedicated account manager</li>
+                            <li data-i18n="pricing.enterprise.f1">Full suite (28 modules)</li>
+                            <li data-i18n="pricing.enterprise.f2">Priority phone support</li>
+                            <li data-i18n="pricing.enterprise.f3">Custom development</li>
+                            <li data-i18n="pricing.enterprise.f4">24 months updates</li>
+                            <li data-i18n="pricing.enterprise.f5">On-site training</li>
+                            <li data-i18n="pricing.enterprise.f6">Dedicated account manager</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="pricing.contact">Contact Us</a>
                     </div>
                 </div>
             </div>
-            
+
             <div id="international" class="pricing-content">
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <h3>Community</h3>
+                        <h3 data-i18n="pricing.community.name">Community</h3>
                         <div class="price">$79 - $199</div>
-                        <p class="price-subtitle">Per module license</p>
+                        <p class="price-subtitle" data-i18n="pricing.community.subtitle">Per module license</p>
                         <ul class="pricing-features">
-                            <li>✅ Single domain</li>
-                            <li>✅ Email support</li>
-                            <li>✅ 12 months updates</li>
-                            <li>✅ Community forum</li>
+                            <li data-i18n="pricing.community.f1">Single domain</li>
+                            <li data-i18n="pricing.community.f2">Email support</li>
+                            <li data-i18n="pricing.community.f3">12 months updates</li>
+                            <li data-i18n="pricing.community.f4">Community forum</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Purchase</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="pricing.purchase">Purchase</a>
                     </div>
-                    
+
                     <div class="pricing-card popular">
-                        <div class="popular-badge">Best Value</div>
-                        <h3>Business</h3>
+                        <div class="popular-badge" data-i18n="pricing.bestvalue">Best Value</div>
+                        <h3 data-i18n="pricing.business.name">Business</h3>
                         <div class="price">$299 - $599</div>
-                        <p class="price-subtitle">5 modules bundle</p>
+                        <p class="price-subtitle" data-i18n="pricing.business.subtitle">5 modules bundle</p>
                         <ul class="pricing-features">
-                            <li>✅ Up to 5 domains</li>
-                            <li>✅ Email + chat support</li>
-                            <li>✅ 12 months updates</li>
-                            <li>✅ Priority bug fixes</li>
+                            <li data-i18n="pricing.business.f1">Up to 5 domains</li>
+                            <li data-i18n="pricing.business.f2">Email + chat support</li>
+                            <li data-i18n="pricing.business.f3">12 months updates</li>
+                            <li data-i18n="pricing.business.f4">Priority bug fixes</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary">Purchase</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="pricing.purchase">Purchase</a>
                     </div>
-                    
+
                     <div class="pricing-card">
-                        <h3>Enterprise</h3>
+                        <h3 data-i18n="pricing.enterprise2.name">Enterprise</h3>
                         <div class="price">$999+</div>
-                        <p class="price-subtitle">Full suite license</p>
+                        <p class="price-subtitle" data-i18n="pricing.enterprise2.subtitle">Full suite license</p>
                         <ul class="pricing-features">
-                            <li>✅ Unlimited domains</li>
-                            <li>✅ Priority support</li>
-                            <li>✅ 24 months updates</li>
-                            <li>✅ Custom development</li>
-                            <li>✅ White-label options</li>
+                            <li data-i18n="pricing.enterprise2.f1">Unlimited domains</li>
+                            <li data-i18n="pricing.enterprise2.f2">Priority support</li>
+                            <li data-i18n="pricing.enterprise2.f3">24 months updates</li>
+                            <li data-i18n="pricing.enterprise2.f4">Custom development</li>
+                            <li data-i18n="pricing.enterprise2.f5">White-label options</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="pricing.contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -374,39 +499,42 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About MAB Modules</h2>
+            <div class="section-header">
+                <span class="section-badge" data-i18n="about.badge">Our Story</span>
+                <h2 class="section-title" data-i18n="about.title">About MAB Modules</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>MAB Modules was born from real-world experience building e-commerce solutions for the Algerian market. After facing the challenges of integrating local shipping providers, managing multi-location inventory, and creating culturally-relevant checkout experiences, we decided to build a comprehensive solution.</p>
-                    
-                    <h3>Our Mission</h3>
-                    <p>To provide professional, affordable, and culturally-appropriate e-commerce extensions for Algerian businesses looking to compete in the digital economy.</p>
-                    
-                    <h3>Our Values</h3>
+                    <p data-i18n="about.p1">MAB Modules was born from real-world experience building e-commerce solutions for the Algerian market. After facing the challenges of integrating local shipping providers, managing multi-location inventory, and creating culturally-relevant checkout experiences, we decided to build a comprehensive solution.</p>
+
+                    <h3 data-i18n="about.mission.title">Our Mission</h3>
+                    <p data-i18n="about.mission.desc">To provide professional, affordable, and culturally-appropriate e-commerce extensions for Algerian businesses looking to compete in the digital economy.</p>
+
+                    <h3 data-i18n="about.values.title">Our Values</h3>
                     <ul class="values-list">
-                        <li><strong>Quality First:</strong> Enterprise-grade code with professional documentation</li>
-                        <li><strong>Local Focus:</strong> Built specifically for Algerian market needs</li>
-                        <li><strong>Affordable:</strong> Competitive pricing for businesses of all sizes</li>
-                        <li><strong>Support:</strong> Dedicated assistance in French and Arabic</li>
-                        <li><strong>Innovation:</strong> Continuous improvement based on real feedback</li>
+                        <li><strong data-i18n="about.values.v1t">Quality First:</strong> <span data-i18n="about.values.v1d">Enterprise-grade code with professional documentation</span></li>
+                        <li><strong data-i18n="about.values.v2t">Local Focus:</strong> <span data-i18n="about.values.v2d">Built specifically for Algerian market needs</span></li>
+                        <li><strong data-i18n="about.values.v3t">Affordable:</strong> <span data-i18n="about.values.v3d">Competitive pricing for businesses of all sizes</span></li>
+                        <li><strong data-i18n="about.values.v4t">Support:</strong> <span data-i18n="about.values.v4d">Dedicated assistance in French and Arabic</span></li>
+                        <li><strong data-i18n="about.values.v5t">Innovation:</strong> <span data-i18n="about.values.v5d">Continuous improvement based on real feedback</span></li>
                     </ul>
                 </div>
                 <div class="about-stats">
                     <div class="stat-box">
                         <div class="stat-number">38+</div>
-                        <div class="stat-label">Development Sessions</div>
+                        <div class="stat-label" data-i18n="about.stats.sessions">Development Sessions</div>
                     </div>
                     <div class="stat-box">
                         <div class="stat-number">28</div>
-                        <div class="stat-label">Professional Modules</div>
+                        <div class="stat-label" data-i18n="about.stats.modules">Professional Modules</div>
                     </div>
                     <div class="stat-box">
                         <div class="stat-number">500+</div>
-                        <div class="stat-label">Code Files</div>
+                        <div class="stat-label" data-i18n="about.stats.files">Code Files</div>
                     </div>
                     <div class="stat-box">
                         <div class="stat-number">100%</div>
-                        <div class="stat-label">Algerian Market Focus</div>
+                        <div class="stat-label" data-i18n="about.stats.focus">Algerian Market Focus</div>
                     </div>
                 </div>
             </div>
@@ -416,58 +544,86 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-subtitle">Ready to transform your Algerian e-commerce store?</p>
-            
+            <div class="section-header">
+                <span class="section-badge" data-i18n="contact.badge">Let's Talk</span>
+                <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Ready to transform your Algerian e-commerce store?</p>
+            </div>
+
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3 data-i18n="contact.info">Contact Information</h3>
                     <div class="contact-item">
-                        <strong>Mounir Abderrahmani</strong>
-                        <p>Senior Full Stack Developer & Magento Certified Expert</p>
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <div>
+                            <strong>Mounir Abderrahmani</strong>
+                            <p data-i18n="contact.role">Senior Full Stack Developer & Magento Certified Expert</p>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <strong>Email:</strong>
-                        <a href="mailto:mounir.webdev@gmail.com">mounir.webdev@gmail.com</a>
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact.email.label">Email:</strong>
+                            <a href="mailto:mounir.webdev@gmail.com">mounir.webdev@gmail.com</a>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <strong>Portfolio:</strong>
-                        <a href="https://mounir1.github.io" target="_blank">mounir1.github.io</a>
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact.portfolio.label">Portfolio:</strong>
+                            <a href="https://mounir1.github.io" target="_blank">mounir1.github.io</a>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <strong>GitHub:</strong>
-                        <a href="https://github.com/mounirtms" target="_blank">github.com/mounirtms</a>
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact.github.label">GitHub:</strong>
+                            <a href="https://github.com/mounirtms" target="_blank">github.com/mounirtms</a>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <strong>Support Hours:</strong>
-                        <p>Sunday - Thursday: 9:00 AM - 6:00 PM (Algeria Time)</p>
-                        <p>Email support: 24/7</p>
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact.hours.label">Support Hours:</strong>
+                            <p data-i18n="contact.hours.value">Sunday - Thursday: 9:00 AM - 6:00 PM (Algeria Time)</p>
+                            <p data-i18n="contact.hours.email">Email support: 24/7</p>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
-                    <h3>Send us a message</h3>
+                    <h3 data-i18n="contact.form.title">Send us a message</h3>
                     <form action="https://formsubmit.co/mounir.webdev@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="MAB Modules Inquiry">
                         <input type="hidden" name="_captcha" value="false">
-                        
+
                         <div class="form-group">
-                            <label for="name">Name *</label>
+                            <label for="name" data-i18n="contact.form.name">Name *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="email">Email *</label>
+                            <label for="email" data-i18n="contact.form.email">Email *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="company">Company</label>
+                            <label for="company" data-i18n="contact.form.company">Company</label>
                             <input type="text" id="company" name="company">
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="modules">Modules Interested In</label>
+                            <label for="modules" data-i18n="contact.form.modules">Modules Interested In</label>
                             <select id="modules" name="modules" multiple>
                                 <option value="YalidineCarrier">YalidineCarrier</option>
                                 <option value="SourceSelector">SourceSelector</option>
@@ -477,13 +633,13 @@
                                 <option value="Full Suite">Full Suite</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="message">Message *</label>
+                            <label for="message" data-i18n="contact.form.message">Message *</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.form.submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -495,39 +651,59 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>MAB Modules</h4>
-                    <p>Professional Magento 2 Extensions for the Algerian Market</p>
+                    <div class="footer-brand">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="8" fill="url(#logo-gradient2)"/>
+                                <path d="M12 28V14L20 22L28 14V28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="logo-gradient2" x1="0" y1="0" x2="40" y2="40">
+                                        <stop stop-color="#4F46E5"/>
+                                        <stop offset="1" stop-color="#7C3AED"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>MAB Modules</span>
+                    </div>
+                    <p data-i18n="footer.desc">Professional Magento 2 Extensions for the Algerian Market</p>
                     <div class="social-links">
-                        <a href="https://github.com/mounirtms" target="_blank">GitHub</a>
-                        <a href="https://mounir1.github.io" target="_blank">Portfolio</a>
-                        <a href="mailto:mounir.webdev@gmail.com">Email</a>
+                        <a href="https://github.com/mounirtms" target="_blank" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 2.95.957.857-.238 1.767-.357 2.675-.36.91.003 1.816.122 2.675.36 1.942-1.279 2.946-.958 2.946-.958.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://mounir1.github.io" target="_blank" aria-label="Portfolio">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </a>
+                        <a href="mailto:mounir.webdev@gmail.com" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer.links">Quick Links</h4>
                     <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#modules">Modules</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="#modules" data-i18n="nav.modules">Modules</a></li>
+                        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Documentation</h4>
+                    <h4 data-i18n="footer.docs">Documentation</h4>
                     <ul>
-                        <li><a href="MAB_MODULES_COMPREHENSIVE_REPORT.md" target="_blank">Comprehensive Report</a></li>
-                        <li><a href="WEBSITE_CONTENT_GUIDE.md" target="_blank">Content Guide</a></li>
-                        <li><a href="https://github.com/mounirtms/mab-modules" target="_blank">GitHub Repository</a></li>
+                        <li><a href="MAB_MODULES_COMPREHENSIVE_REPORT.md" target="_blank" data-i18n="footer.report">Comprehensive Report</a></li>
+                        <li><a href="https://github.com/mounirtms/mounirtms.github.io" target="_blank" data-i18n="footer.repo">GitHub Repository</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Techno Stationery. Built with excellence by Mounir Abderrahmani. MIT License.</p>
+                <p>&copy; 2026 Techno Stationery. <span data-i18n="footer.credit">Built with excellence by Mounir Abderrahmani.</span> MIT License.</p>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
