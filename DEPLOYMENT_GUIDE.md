@@ -69,7 +69,7 @@ mab-modules/
 1. **Hero Section**
    - Main headline and description
    - Call-to-action buttons
-   - Key statistics (28 modules, 48 wilayas, 165+ centers)
+   - Key statistics (28 modules, 58 wilayas, 165+ centers)
 
 2. **Features Section**
    - 6 feature cards with icons

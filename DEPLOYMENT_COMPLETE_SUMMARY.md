@@ -91,7 +91,7 @@
 All 28 MAB Modules Documented:
 
 ### Shipping & Logistics (3 modules)
-1. ✅ YalidineCarrier (v2.1.0) - 165+ centers, 48 wilayas
+1. ✅ YalidineCarrier (v2.1.0) - 165+ centers, 58 wilayas
 2. ✅ SourceSelector (v2.1.0) - Multi-source inventory
 3. ✅ DeliveryOptions - Advanced shipping
 
@@ -244,7 +244,7 @@ Danger:    #f56565 (Red)
 ## ✨ What Makes This Special
 
 ### For Algerian Market
-- **Yalidine Integration**: 165+ centers, all 48 wilayas
+- **Yalidine Integration**: 165+ centers, all 58 wilayas
 - **DZD Pricing**: Local currency support
 - **French Locale**: Complete bilingual support
 - **COD Support**: Cash on delivery optimization

@@ -17,7 +17,7 @@
 ## Quick Links
 
 - 📊 **[Comprehensive Report](MAB_MODULES_COMPREHENSIVE_REPORT.md)** - Full documentation with pricing, architecture, and market analysis
-- 🚚 **[Yalidine Carrier](app/code/Mab/YalidineCarrier/README.md)** - Algerian shipping integration (165+ centers, 48 wilayas)
+- 🚚 **[Yalidine Carrier](app/code/Mab/YalidineCarrier/README.md)** - Algerian shipping integration (165+ centers, 58 wilayas)
 - 📦 **[Source Selector](app/code/Mab/SourceSelector/README.md)** - Multi-source inventory management
 - 🛒 **[Checkout Customization](app/code/Mab/CheckoutCustomization/README.md)** - Enhanced checkout experience
 - 👤 **[Social Login](app/code/Mab/SocialLogin/README.md)** - Firebase authentication (Google, Facebook)
@@ -31,7 +31,7 @@ The **MAB Modules Suite** is a comprehensive collection of **28 professional Mag
 
 ### Key Features
 
-✅ **Yalidine Integration**: Real-time shipping with 165+ centers across all 48 Algerian wilayas  
+✅ **Yalidine Integration**: Real-time shipping with 165+ centers across all 58 Algerian wilayas  
 ✅ **Multi-Source Inventory**: Intelligent warehouse management with distance-based selection  
 ✅ **Enhanced Checkout**: Algerian address validation with pickup-source mismatch detection  
 ✅ **Social Login**: Firebase Authentication (Google, Facebook) with checkout success integration  
@@ -44,7 +44,7 @@ The **MAB Modules Suite** is a comprehensive collection of **28 professional Mag
 | Metric | Value |
 |--------|-------|
 | Total Modules | 28 |
-| Algerian Wilayas | 48/48 |
+| Algerian Wilayas | 58/58 |
 | Yalidine Centers | 165+ |
 | Languages | English, French |
 | Magento Version | 2.4.x |

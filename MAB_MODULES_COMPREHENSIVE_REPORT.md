@@ -39,7 +39,7 @@
 The **MAB Modules Suite** is a comprehensive collection of **28 professional Magento 2 extensions** specifically designed for the Algerian e-commerce market. Built on enterprise architecture patterns, these modules provide:
 
 - **Multi-source inventory management** optimized for Algerian logistics
-- **Yalidine carrier integration** with 165+ delivery centers across 48 wilayas
+- **Yalidine carrier integration** with 165+ delivery centers across 58 wilayas
 - **Enhanced checkout experience** with Algerian address validation
 - **Social login** via Firebase Authentication (Google, Facebook)
 - **Push notification system** for customer engagement
@@ -54,7 +54,7 @@ The **MAB Modules Suite** is a comprehensive collection of **28 professional Mag
 | Languages Supported | English, French (Français) |
 | Magento Compatibility | 2.4.x |
 | PHP Version | 8.1+ |
-| Algerian Wilayas Covered | 48/48 |
+| Algerian Wilayas Covered | 58/58 |
 | Yalidine Centers | 165+ |
 | Development Sessions | 38+ |
 | Production Status | Beta Testing → Production Ready |
@@ -222,7 +222,7 @@ Comprehensive integration with Yalidine Express, Algeria's leading logistics pro
 | Feature | Description | Status |
 |---------|-------------|--------|
 | Real-time Rate Calculation | Live shipping rates from Yalidine API | ✅ |
-| Wilaya/Commune Selection | 48 wilayas with commune-level accuracy | ✅ |
+| Wilaya/Commune Selection | 58 wilayas with commune-level accuracy | ✅ |
 | 165+ Center Database | Complete Yalidine center coverage | ✅ |
 | Multi-Account Support | Multiple Yalidine accounts per source | ✅ |
 | Parcel Management Grid | Admin interface for parcel tracking | ✅ |
@@ -246,7 +246,7 @@ Comprehensive integration with Yalidine Express, Algeria's leading logistics pro
 - 165+ Yalidine centers across Algeria
 - Free pickup at selected center
 - Center information display (address, phone, GPS)
-- 24-48 hour pickup availability
+- 24-58 hour pickup availability
 
 **3. Source Pickup (Retrait en magasin)**
 - Pickup from Techno Stationery retail locations
@@ -276,7 +276,7 @@ Comprehensive integration with Yalidine Express, Algeria's leading logistics pro
 
 #### Wilaya Coverage
 
-All 48 Algerian wilayas covered:
+All 58 Algerian wilayas covered:
 - **Major Cities**: Alger, Oran, Constantine, Annaba, Blida, Setif
 - **Southern Regions**: Ouargla, Ghardaia, Bechar, Tamanrasset
 - **Western Regions**: Tlemcen, Sidi Bel Abbes, Mascara
@@ -763,13 +763,13 @@ Algeria's e-commerce market is rapidly growing with unique logistics challenges:
 | Internet Penetration | 70%+ |
 | E-commerce Growth | 25% YoY |
 | Preferred Payment | Cash on Delivery (85%) |
-| Delivery Coverage | 48 wilayas |
+| Delivery Coverage | 58 wilayas |
 | Major Cities | 12 metropolitan areas |
 
 ### Why Yalidine Integration Matters
 
 1. **Market Leader**: Yalidine is Algeria's largest logistics provider
-2. **Nationwide Coverage**: 165+ centers across all 48 wilayas
+2. **Nationwide Coverage**: 165+ centers across all 58 wilayas
 3. **Real-time Tracking**: API integration for live status updates
 4. **COD Support**: Cash on delivery alignment with market preferences
 5. **Multi-Modal**: Home delivery, stop desk, and pickup options
