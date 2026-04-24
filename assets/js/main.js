@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
             // Close mobile menu if open
-            mobileMenu.classList.remove('active');
+            if (mobileMenu) mobileMenu.classList.remove('active');
         });
     });
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
-    
+
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
             mobileMenu.classList.toggle('active');
@@ -99,18 +99,109 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
 
-    // Contact form validation
-    const contactForm = document.querySelector('.contact-form form');
+    // Contact form with Firebase Firestore
+    const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
 
+            const submitBtn = document.getElementById('submit-btn');
+            const statusEl = document.getElementById('form-status');
+            const nameEl = document.getElementById('name');
+            const emailEl = document.getElementById('email');
+            const companyEl = document.getElementById('company');
+            const modulesEl = document.getElementById('contact-modules');
+            const messageEl = document.getElementById('message');
+
+            const name = nameEl.value.trim();
+            const email = emailEl.value.trim();
+            const company = companyEl.value.trim();
+            const message = messageEl.value.trim();
+            const selectedModules = Array.from(modulesEl.selectedOptions).map(o => o.value);
+
+            // Validate
             if (!name || !email || !message) {
-                e.preventDefault();
-                alert('Please fill in all required fields.');
+                statusEl.className = 'form-status error';
+                statusEl.textContent = 'Please fill in all required fields.';
+                statusEl.style.display = 'block';
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                statusEl.className = 'form-status error';
+                statusEl.textContent = 'Please enter a valid email address.';
+                statusEl.style.display = 'block';
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+            statusEl.style.display = 'none';
+
+            try {
+                // Wait for Firebase to be initialized
+                await waitForFirebase();
+
+                const { addDoc, collection, serverTimestamp } = await import(
+                    "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js"
+                );
+
+                await addDoc(collection(window.firebaseDb, 'contact_submissions'), {
+                    name: name,
+                    email: email,
+                    company: company || null,
+                    modules: selectedModules,
+                    message: message,
+                    source: 'website',
+                    locale: document.documentElement.lang,
+                    createdAt: serverTimestamp()
+                });
+
+                // Success
+                statusEl.className = 'form-status success';
+                statusEl.textContent = 'Message sent successfully! We will get back to you soon.';
+                statusEl.style.display = 'block';
+                contactForm.reset();
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.disabled = false;
+
+                // Hide status after 5 seconds
+                setTimeout(() => {
+                    statusEl.style.display = 'none';
+                }, 5000);
+
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                statusEl.className = 'form-status error';
+                statusEl.textContent = 'Failed to send message. Please try again or email us directly.';
+                statusEl.style.display = 'block';
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.disabled = false;
             }
         });
     }
 });
+
+// Helper: Wait for Firebase to be initialized
+function waitForFirebase() {
+    return new Promise((resolve) => {
+        if (window.firebaseDb) {
+            resolve();
+        } else {
+            const check = setInterval(() => {
+                if (window.firebaseDb) {
+                    clearInterval(check);
+                    resolve();
+                }
+            }, 50);
+            // Timeout after 5 seconds
+            setTimeout(() => {
+                clearInterval(check);
+                resolve();
+            }, 5000);
+        }
+    });
+}

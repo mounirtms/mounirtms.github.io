@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Contact form submissions - anyone can create, only admins can read
+    match /contact_submissions/{submissionId} {
+      allow create: if true;
+      allow read, update, delete: if false; // Only via Firebase Console
+    }
+  }
+}

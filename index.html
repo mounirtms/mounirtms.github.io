@@ -9,6 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+        import { getStorage } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyC24K1vxDUPy5-IAm92FpLOBYaoYTx5pqo",
+            authDomain: "mab-modules.firebaseapp.com",
+            projectId: "mab-modules",
+            storageBucket: "mab-modules.firebasestorage.app",
+            messagingSenderId: "831474924196",
+            appId: "1:831474924196:web:a6f92ab9a0cdf3facd4431",
+            measurementId: "G-SEPZWBWJ6P"
+        };
+
+        // Initialize Firebase
+        const fbApp = initializeApp(firebaseConfig);
+        const fbAnalytics = getAnalytics(fbApp);
+        const fbDb = getFirestore(fbApp);
+        const fbStorage = getStorage(fbApp);
+
+        // Expose to window for use in other scripts
+        window.firebaseApp = fbApp;
+        window.firebaseDb = fbDb;
+        window.firebaseStorage = fbStorage;
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -603,10 +632,7 @@
 
                 <div class="contact-form">
                     <h3 data-i18n="contact.form.title">Send us a message</h3>
-                    <form action="https://formsubmit.co/mounir.webdev@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="MAB Modules Inquiry">
-                        <input type="hidden" name="_captcha" value="false">
-
+                    <form id="contact-form">
                         <div class="form-group">
                             <label for="name" data-i18n="contact.form.name">Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -624,7 +650,7 @@
 
                         <div class="form-group">
                             <label for="modules" data-i18n="contact.form.modules">Modules Interested In</label>
-                            <select id="modules" name="modules" multiple>
+                            <select id="contact-modules" name="modules" multiple>
                                 <option value="YalidineCarrier">YalidineCarrier</option>
                                 <option value="SourceSelector">SourceSelector</option>
                                 <option value="CheckoutCustomization">CheckoutCustomization</option>
@@ -639,7 +665,9 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.form.submit">Send Message</button>
+                        <div class="form-status" id="form-status" style="display:none;"></div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn" data-i18n="contact.form.submit">Send Message</button>
                     </form>
                 </div>
             </div>
