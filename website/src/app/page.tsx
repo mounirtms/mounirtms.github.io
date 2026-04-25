@@ -8,9 +8,19 @@ import Pricing from '@/components/Pricing';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import { organizationSchema, websiteSchema } from './schema';
 
 export default function Home() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MAB Modules",
+    "url": "https://mab-modules.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Mounir Abderrahmani"
+    }
+  };
+
   return (
     <>
       {/* Structured Data */}
@@ -18,12 +28,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteSchema),
         }}
       />
 
