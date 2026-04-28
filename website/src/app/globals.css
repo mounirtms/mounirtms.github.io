@@ -2110,3 +2110,618 @@ body {
         font-size: 0.7rem;
     }
 }
+
+/* ETL Pipeline Section */
+.etl-pipeline {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, var(--gray-50) 0%, white 50%, var(--gray-50) 100%);
+}
+
+.etl-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.etl-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.etl-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-300);
+}
+
+.etl-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-50) 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--primary-200);
+}
+
+.etl-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--primary-600);
+}
+
+.etl-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 2;
+}
+
+.etl-card h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 1rem 0;
+}
+
+.etl-card > p {
+    color: var(--gray-600);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+}
+
+.etl-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.etl-features li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: var(--gray-700);
+    position: relative;
+    font-size: 0.95rem;
+}
+
+[dir="rtl"] .etl-features li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+.etl-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-600);
+    font-weight: 700;
+}
+
+[dir="rtl"] .etl-features li::before {
+    left: auto;
+    right: 0;
+}
+
+.etl-tech-stack {
+    background: white;
+    padding: 3rem;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--gray-200);
+    text-align: center;
+}
+
+.etl-tech-stack h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 2rem 0;
+}
+
+.etl-tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.etl-tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    transition: all var(--transition-fast);
+    min-width: 100px;
+}
+
+.etl-tech-item:hover {
+    background: var(--primary-50);
+    border-color: var(--primary-300);
+    transform: translateY(-2px);
+}
+
+.etl-tech-icon {
+    font-size: 2.5rem;
+}
+
+.etl-tech-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+/* Services Pricing Section */
+.services-pricing {
+    padding: 5rem 0;
+    background: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.service-card.featured {
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px var(--primary-100);
+}
+
+.service-badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-600);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-lg);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 1rem 0;
+}
+
+.service-description {
+    color: var(--gray-600);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+}
+
+.service-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.service-price-dzd {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary-600);
+}
+
+.service-price-usd {
+    font-size: 1.125rem;
+    color: var(--gray-500);
+}
+
+.service-time {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    font-weight: 600;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex-grow: 1;
+}
+
+.service-features li {
+    padding: 0.625rem 0 0.625rem 1.5rem;
+    color: var(--gray-700);
+    position: relative;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+[dir="rtl"] .service-features li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-600);
+    font-weight: 700;
+}
+
+[dir="rtl"] .service-features li::before {
+    left: auto;
+    right: 0;
+}
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+.service-card .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.additional-services {
+    margin-top: 4rem;
+}
+
+.additional-services h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.additional-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.additional-card {
+    background: var(--gray-50);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    transition: all var(--transition-fast);
+}
+
+.additional-card:hover {
+    background: white;
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-300);
+}
+
+.additional-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.additional-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0;
+}
+
+.additional-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+[dir="rtl"] .additional-prices {
+    align-items: flex-start;
+}
+
+.additional-price-dzd {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--primary-600);
+}
+
+.additional-price-usd {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+.additional-card > p {
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Akeneo Pricing Section */
+.akeneo-pricing {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, var(--gray-50) 0%, white 50%, var(--gray-50) 100%);
+}
+
+.akeneo-packages-title {
+    margin-bottom: 2rem;
+}
+
+.akeneo-packages-title h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0;
+    text-align: center;
+}
+
+.akeneo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.akeneo-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.akeneo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.akeneo-card.featured {
+    border-color: var(--success-500);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.akeneo-badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--success-500);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-lg);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.akeneo-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 1rem 0;
+}
+
+.akeneo-description {
+    color: var(--gray-600);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+}
+
+.akeneo-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.akeneo-price-dzd {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--success-600);
+}
+
+.akeneo-price-usd {
+    font-size: 1.125rem;
+    color: var(--gray-500);
+}
+
+.akeneo-time {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    font-weight: 600;
+}
+
+.akeneo-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex-grow: 1;
+}
+
+.akeneo-features li {
+    padding: 0.625rem 0 0.625rem 1.5rem;
+    color: var(--gray-700);
+    position: relative;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+[dir="rtl"] .akeneo-features li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+.akeneo-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-600);
+    font-weight: 700;
+}
+
+[dir="rtl"] .akeneo-features li::before {
+    left: auto;
+    right: 0;
+}
+
+.akeneo-features li:last-child {
+    border-bottom: none;
+}
+
+.akeneo-card .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.professional-services {
+    margin-top: 4rem;
+}
+
+.professional-services h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.services-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.professional-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+    text-align: center;
+}
+
+.professional-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-300);
+}
+
+.professional-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-50) 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--primary-600);
+    border: 2px solid var(--primary-200);
+}
+
+.professional-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke-width: 2;
+}
+
+.professional-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 1rem 0;
+}
+
+.professional-card > p {
+    color: var(--gray-600);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+}
+
+.professional-price {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background: var(--primary-50);
+    color: var(--primary-700);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: 1px solid var(--primary-200);
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .etl-grid,
+    .services-grid,
+    .akeneo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .etl-card,
+    .service-card,
+    .akeneo-card {
+        padding: 2rem;
+    }
+
+    .additional-grid,
+    .services-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .additional-header {
+        flex-direction: column;
+    }
+
+    .additional-prices {
+        align-items: flex-start;
+    }
+
+    .etl-tech-icons {
+        gap: 1rem;
+    }
+
+    .etl-tech-item {
+        min-width: 80px;
+        padding: 1rem;
+    }
+
+    .etl-tech-icon {
+        font-size: 2rem;
+    }
+
+    .etl-tech-stack {
+        padding: 2rem 1.5rem;
+    }
+
+    .service-pricing,
+    .akeneo-pricing {
+        flex-direction: column;
+    }
+}

@@ -24,7 +24,10 @@ const navTranslations: Record<Locale, Record<string, string>> = {
     modules: 'Modules',
     techStack: 'Tech Stack',
     architecture: 'Architecture',
+    etl: 'ETL',
     pricing: 'Pricing',
+    services: 'Services',
+    akeneo: 'Akeneo',
     about: 'About',
     contact: 'Contact',
   },
@@ -33,7 +36,10 @@ const navTranslations: Record<Locale, Record<string, string>> = {
     modules: 'Modules',
     techStack: 'Technologies',
     architecture: 'Architecture',
+    etl: 'ETL',
     pricing: 'Tarifs',
+    services: 'Services',
+    akeneo: 'Akeneo',
     about: 'À Propos',
     contact: 'Contact',
   },
@@ -42,7 +48,10 @@ const navTranslations: Record<Locale, Record<string, string>> = {
     modules: 'الوحدات',
     techStack: 'التقنيات',
     architecture: 'البنية',
+    etl: 'خط البيانات',
     pricing: 'الأسعار',
+    services: 'الخدمات',
+    akeneo: 'أكانيو',
     about: 'حول',
     contact: 'اتصل بنا',
   },
@@ -95,10 +104,11 @@ export default function Navbar() {
         <ul className={`nav-menu ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <li><a href="#features" onClick={() => setMobileMenuOpen(false)}>{t.features}</a></li>
           <li><a href="#modules" onClick={() => setMobileMenuOpen(false)}>{t.modules}</a></li>
-          <li><a href="#tech-stack" onClick={() => setMobileMenuOpen(false)}>{t.techStack}</a></li>
           <li><a href="#architecture" onClick={() => setMobileMenuOpen(false)}>{t.architecture}</a></li>
+          <li><a href="#etl" onClick={() => setMobileMenuOpen(false)}>{t.etl}</a></li>
           <li><a href="#pricing" onClick={() => setMobileMenuOpen(false)}>{t.pricing}</a></li>
-          <li><a href="#about" onClick={() => setMobileMenuOpen(false)}>{t.about}</a></li>
+          <li><a href="#services-pricing" onClick={() => setMobileMenuOpen(false)}>{t.services}</a></li>
+          <li><a href="#akeneo-pricing" onClick={() => setMobileMenuOpen(false)}>{t.akeneo}</a></li>
           <li><a href="#contact" onClick={() => setMobileMenuOpen(false)}>{t.contact}</a></li>
         </ul>
 

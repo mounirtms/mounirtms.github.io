@@ -9,10 +9,77 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MAB Modules - Professional Magento 2 Extensions for Algeria",
-  description: "28 professional Magento 2 extensions designed for the Algerian e-commerce market. Yalidine shipping, multi-source inventory, enhanced checkout, social login, and push notifications.",
-  keywords: ["Magento 2", "Algeria", "E-commerce", "Yalidine", "Shipping", "Extensions", "Modules", "MSI", "Checkout", "Firebase", "Social Login"],
-  authors: [{ name: "Mounir Abderrahmani" }],
+  title: "MAB Modules - Professional Magento 2 Extensions & E-commerce Solutions Algeria",
+  description: "Leading Algerian e-commerce solutions provider. 28+ Magento 2 extensions, Yalidine shipping integration, Akeneo PIM, ETL pipelines, server deployment. Trusted by Algerian businesses for professional e-commerce development.",
+  keywords: [
+    // Primary Algerian market
+    "Magento 2 Algeria",
+    "e-commerce Algeria",
+    "Yalidine integration",
+    "Algerian shipping",
+    "58 wilayas",
+    "Yalidine Express",
+    "COD Algeria",
+    "Algerian e-commerce platform",
+    "Magento developer Algeria",
+    "e-commerce development Algeria",
+    "Techno Stationery",
+    "Mounir Abderrahmani",
+    
+    // Products & Services
+    "Magento 2 extensions",
+    "Magento modules",
+    "Akeneo PIM",
+    "PIM integration",
+    "ETL pipeline",
+    "data integration",
+    "shipping integration",
+    "multi-source inventory",
+    "checkout customization",
+    "social login",
+    "push notifications",
+    
+    // Technical
+    "Magento 2.4.x",
+    "PHP development",
+    "MySQL",
+    "Redis",
+    "Elasticsearch",
+    "Firebase hosting",
+    "server deployment",
+    "Linux server",
+    "Nginx configuration",
+    "performance optimization",
+    
+    // Services
+    "e-commerce consulting",
+    "server installation",
+    "production deployment",
+    "enterprise infrastructure",
+    "Magento development",
+    "system integration",
+    "security audit",
+    "performance audit",
+    "training services",
+    
+    // Geographic
+    "Algeria",
+    "Algerian market",
+    "North Africa",
+    "MENA region",
+    "DZ",
+    "wilaya",
+    
+    // Industry terms
+    "online store",
+    "online shopping Algeria",
+    "payment gateway",
+    "inventory management",
+    "order management",
+    "customer management",
+    "product catalog",
+  ],
+  authors: [{ name: "Mounir Abderrahmani" }, { name: "MAB Modules" }],
   creator: "MAB Modules",
   publisher: "Techno Stationery",
   icons: {
@@ -38,8 +105,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "MAB Modules - Professional Magento 2 Extensions",
-    description: "28 professional Magento 2 extensions designed for the Algerian e-commerce market. From Yalidine shipping integration to multi-source inventory management.",
+    title: "MAB Modules - Professional Magento 2 Extensions for Algeria",
+    description: "28+ professional Magento 2 extensions and enterprise e-commerce solutions. Yalidine shipping, Akeneo PIM, ETL pipelines, server deployment services. Built specifically for the Algerian market.",
     url: "https://mab-modules.com",
     siteName: "MAB Modules",
     locale: "en_US",
@@ -56,7 +123,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MAB Modules - Professional Magento 2 Extensions",
-    description: "28 professional Magento 2 extensions designed for the Algerian e-commerce market.",
+    description: "Leading Algerian e-commerce solutions: Magento 2 extensions, Yalidine integration, Akeneo PIM, ETL pipelines, and professional services.",
     images: ["/assets/og-image.jpg"],
   },
   robots: {
