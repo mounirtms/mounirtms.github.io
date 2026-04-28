@@ -106,7 +106,7 @@ export default function Hero() {
           </div>
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-number">28</span>
+              <span className="stat-number">32+</span>
               <span className="stat-label">{t.stats.modules}</span>
             </div>
             <div className="stat">
@@ -118,8 +118,8 @@ export default function Hero() {
               <span className="stat-label">{t.stats.centers}</span>
             </div>
             <div className="stat">
-              <span className="stat-number">2.4.x</span>
-              <span className="stat-label">{t.stats.magento}</span>
+              <span className="stat-number">AI</span>
+              <span className="stat-label">Analytics</span>
             </div>
           </div>
         </div>

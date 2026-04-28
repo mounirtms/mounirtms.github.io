@@ -59,6 +59,7 @@ export default function Pricing() {
                   <li>Advanced configuration</li>
                   <li>12 months updates</li>
                   <li>Training session included</li>
+                  <li>Monitoring Dashboard</li>
                 </ul>
                 <a href="#contact" className="btn btn-primary">Get Started</a>
               </div>
@@ -68,12 +69,16 @@ export default function Pricing() {
                 <div className="price">200,000+ DZD</div>
                 <p className="price-subtitle">For large operations</p>
                 <ul className="pricing-features">
-                  <li>Full suite (28 modules)</li>
+                  <li>Full suite (32+ components)</li>
                   <li>Priority phone support</li>
                   <li>Custom development</li>
                   <li>24 months updates</li>
                   <li>On-site training</li>
                   <li>Dedicated account manager</li>
+                  <li>Telegram Bot Integration</li>
+                  <li>AI Reports & Analytics</li>
+                  <li>PIM Connect (Akeneo)</li>
+                  <li>Alert System & Monitoring</li>
                 </ul>
                 <a href="#contact" className="btn btn-outline">Contact Us</a>
               </div>
@@ -107,13 +112,14 @@ export default function Pricing() {
                   <li>Email + chat support</li>
                   <li>12 months updates</li>
                   <li>Priority bug fixes</li>
+                  <li>Monitoring Dashboard</li>
                 </ul>
                 <a href="#contact" className="btn btn-primary">Purchase</a>
               </div>
 
               <div className="pricing-card">
                 <h3>Enterprise</h3>
-                <div className="price">$999+</div>
+                <div className="price">$1,499+</div>
                 <p className="price-subtitle">Full suite license</p>
                 <ul className="pricing-features">
                   <li>Unlimited domains</li>
@@ -121,6 +127,10 @@ export default function Pricing() {
                   <li>24 months updates</li>
                   <li>Custom development</li>
                   <li>White-label options</li>
+                  <li>Telegram Bot Integration</li>
+                  <li>AI Reports & Analytics</li>
+                  <li>PIM Connect (Akeneo)</li>
+                  <li>Enterprise Resilience Pack</li>
                 </ul>
                 <a href="#contact" className="btn btn-outline">Contact Us</a>
               </div>
