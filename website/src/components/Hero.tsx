@@ -106,7 +106,7 @@ export default function Hero() {
           </div>
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-number">32+</span>
+              <span className="stat-number">29</span>
               <span className="stat-label">{t.stats.modules}</span>
             </div>
             <div className="stat">

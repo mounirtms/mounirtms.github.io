@@ -9,7 +9,7 @@ export default function Modules() {
         </svg>
       ),
       name: 'YalidineCarrier',
-      version: 'v2.1.0',
+      version: 'v1.0.8',
       description: 'Complete Yalidine Express integration with 165+ centers, real-time rates, and multi-account support.',
       features: ['Home Delivery', 'Stop Desk', 'Source Pickup', 'COD Support', 'Webhooks', '58 Wilayas'],
       priceDZD: '25,000 DZD',
@@ -24,7 +24,7 @@ export default function Modules() {
         </svg>
       ),
       name: 'SourceSelector',
-      version: 'v2.1.0',
+      version: 'v1.0.0',
       description: 'Intelligent multi-source inventory with distance-based selection and real-time stock alerts.',
       features: ['Distance-based', 'Real-time Sync', 'Stock Alerts', 'Multi-warehouse'],
       priceDZD: '18,000 DZD',
@@ -39,7 +39,7 @@ export default function Modules() {
         </svg>
       ),
       name: 'CheckoutCustomization',
-      version: 'v2.1.0',
+      version: 'v1.0.0',
       description: 'Enhanced checkout with Algerian address validation and pickup-source mismatch detection.',
       features: ['Wilaya Validation', 'Distance Matrix', 'Mobile UI', 'French Locale'],
       priceDZD: '12,000 DZD',
@@ -53,7 +53,7 @@ export default function Modules() {
         </svg>
       ),
       name: 'SocialLogin',
-      version: 'v2.1.0',
+      version: 'v1.0.0',
       description: 'Firebase Authentication with Google and Facebook login for seamless customer onboarding.',
       features: ['Google Sign-In', 'Facebook Login', 'Firebase Auth', 'OAuth 2.0'],
       priceDZD: '10,000 DZD',
@@ -67,7 +67,7 @@ export default function Modules() {
         </svg>
       ),
       name: 'Notifications',
-      version: 'v2.1.0',
+      version: 'v2.0.0',
       description: 'Push notification system for abandoned cart recovery and customer engagement campaigns.',
       features: ['WebPush API', 'Cart Recovery', 'Campaigns', 'Analytics'],
       priceDZD: '12,000 DZD',
@@ -215,7 +215,7 @@ export default function Modules() {
 
         <div className="view-all">
           <a href="https://github.com/mounirtms" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            View All 32+ Components on GitHub
+            View All 29 Modules on GitHub
           </a>
         </div>
       </div>

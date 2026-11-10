@@ -63,7 +63,7 @@ export default function Architecture() {
                 </svg>
               </div>
               <h4>Modular Design</h4>
-              <p>32+ components including enterprise system integrations</p>
+              <p>29 modules including enterprise system integrations</p>
             </div>
           </div>
         </div>
