@@ -68,17 +68,61 @@ export default function Home() {
       "itemListElement": [
         {
           "@type": "OfferCatalog",
-          "name": "Magento 2 Extensions",
+          "name": "Magento 2 Extensions & Shipping",
           "itemListElement": [
             {
               "@type": "Product",
-              "name": "YalidineCarrier - Yalidine Express Integration",
-              "description": "Complete Yalidine Express integration with 165+ centers, real-time rates, and multi-account support for Magento 2"
+              "name": "YalidineCarrier - Multi-Courier Shipping Integration",
+              "description": "Multi-courier shipping integration covering Yalidine Express and Algerian carrier network with real-time rates, multi-account support, and 58 wilayas coverage for Magento 2",
+              "url": "https://mab-modules.com/#modules"
             },
             {
               "@type": "Product",
               "name": "SourceSelector - Multi-source Inventory",
-              "description": "Intelligent multi-source inventory with distance-based Selection and real-time stock alerts"
+              "description": "Intelligent multi-source inventory with distance-based selection and real-time stock alerts for Magento 2",
+              "url": "https://mab-modules.com/#modules"
+            },
+            {
+              "@type": "Product",
+              "name": "CheckoutCustomization - Enhanced Checkout",
+              "description": "Enhanced checkout with Algerian address validation and pickup-source mismatch detection for Magento 2",
+              "url": "https://mab-modules.com/#modules"
+            },
+            {
+              "@type": "Product",
+              "name": "SocialLogin - Firebase Authentication",
+              "description": "Firebase Authentication with Google and Facebook login for seamless customer onboarding for Magento 2",
+              "url": "https://mab-modules.com/#modules"
+            },
+            {
+              "@type": "Product",
+              "name": "Notifications - Push Notification System",
+              "description": "Push notification system for abandoned cart recovery and customer engagement campaigns for Magento 2",
+              "url": "https://mab-modules.com/#modules"
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Payment Services",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "name": "Online Payment Services",
+              "description": "Secure online payment gateway integration for Algerian e-commerce stores. Support for local payment methods, credit cards, and digital wallets. Coming Soon.",
+              "url": "https://mab-modules.com/#modules"
+            },
+            {
+              "@type": "Service",
+              "name": "Yassir Cash Integration",
+              "description": "Yassir Cash payment integration for seamless cash-in and cash-out transactions across Algeria. Coming Soon.",
+              "url": "https://yassir.com/algeria/yassir-cash/"
+            },
+            {
+              "@type": "Service",
+              "name": "Gifty.dz Gift Cards",
+              "description": "Gifty.dz gift card integration for Algerian e-commerce. Sell and redeem digital gift cards across the Gifty partner network. Coming Soon.",
+              "url": "https://gifty.dz/carte-gifty"
             }
           ]
         },

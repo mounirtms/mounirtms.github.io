@@ -10,10 +10,11 @@ export default function Modules() {
       ),
       name: 'YalidineCarrier',
       version: 'v1.0.8',
-      description: 'Complete Yalidine Express integration with 165+ centers, real-time rates, and multi-account support.',
-      features: ['Home Delivery', 'Stop Desk', 'Source Pickup', 'COD Support', 'Webhooks', '58 Wilayas'],
+      description: 'Multi-courier shipping integration covering Yalidine Express and Algerian carrier network with real-time rates, multi-account support, and 58 wilayas coverage.',
+      features: ['Multi-Courier Network', 'Yalidine Express', 'Home Delivery', 'Stop Desk', 'Source Pickup', 'COD Support', 'Webhooks', '58 Wilayas'],
       priceDZD: '25,000 DZD',
       priceUSD: '$199',
+      status: 'active',
     },
     {
       icon: (
@@ -29,6 +30,7 @@ export default function Modules() {
       features: ['Distance-based', 'Real-time Sync', 'Stock Alerts', 'Multi-warehouse'],
       priceDZD: '18,000 DZD',
       priceUSD: '$149',
+      status: 'active',
     },
     {
       icon: (
@@ -44,6 +46,7 @@ export default function Modules() {
       features: ['Wilaya Validation', 'Distance Matrix', 'Mobile UI', 'French Locale'],
       priceDZD: '12,000 DZD',
       priceUSD: '$99',
+      status: 'active',
     },
     {
       icon: (
@@ -58,6 +61,7 @@ export default function Modules() {
       features: ['Google Sign-In', 'Facebook Login', 'Firebase Auth', 'OAuth 2.0'],
       priceDZD: '10,000 DZD',
       priceUSD: '$79',
+      status: 'active',
     },
     {
       icon: (
@@ -72,6 +76,63 @@ export default function Modules() {
       features: ['WebPush API', 'Cart Recovery', 'Campaigns', 'Analytics'],
       priceDZD: '12,000 DZD',
       priceUSD: '$99',
+      status: 'active',
+    },
+  ];
+
+  const comingSoonModules = [
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2a10 10 0 1 0 10 10H12V2z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      ),
+      name: 'Online Payment Services',
+      version: 'Coming Soon',
+      description: 'Secure online payment gateway integration for Algerian e-commerce stores. Support for local payment methods, credit cards, and digital wallets.',
+      features: ['Multi-Payment Gateway', 'Credit Card Support', 'Digital Wallets', 'Secure Transactions'],
+      priceDZD: 'Contact Us',
+      priceUSD: 'Contact Us',
+      status: 'coming-soon',
+      badge: 'Coming Soon',
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="3" y="3" width="7" height="7" />
+          <rect x="14" y="3" width="7" height="7" />
+          <rect x="3" y="14" width="7" height="7" />
+          <rect x="14" y="14" width="7" height="7" />
+        </svg>
+      ),
+      name: 'Yassir Cash',
+      version: 'Coming Soon',
+      description: 'Yassir Cash payment integration for seamless cash-in and cash-out transactions across Algeria.',
+      features: ['Yassir Cash Integration', 'Cash-In / Cash-Out', 'Agent Network', 'Mobile Payments'],
+      priceDZD: 'Contact Us',
+      priceUSD: 'Contact Us',
+      status: 'coming-soon',
+      badge: 'Coming Soon',
+      externalLink: 'https://yassir.com/algeria/yassir-cash/',
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z" />
+          <path d="M2 17l10 5 10-5" />
+          <path d="M2 12l10 5 10-5" />
+        </svg>
+      ),
+      name: 'Gifty.dz Gift Cards',
+      version: 'Coming Soon',
+      description: 'Gifty.dz gift card integration for Algerian e-commerce. Sell and redeem digital gift cards across the Gifty partner network.',
+      features: ['Gifty.dz Integration', 'Digital Gift Cards', 'Partner Network', 'Redeemable Vouchers'],
+      priceDZD: 'Contact Us',
+      priceUSD: 'Contact Us',
+      status: 'coming-soon',
+      badge: 'Coming Soon',
+      externalLink: 'https://gifty.dz/carte-gifty',
     },
   ];
 
@@ -208,6 +269,44 @@ export default function Modules() {
               </div>
               <div className="module-actions">
                 <a href="#architecture" className="btn btn-small">Learn More</a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="category-title" style={{ marginTop: '64px' }}>Coming Soon</h3>
+        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          New payment and shipping integrations arriving for Algerian e-commerce
+        </p>
+        <div className="modules-grid">
+          {comingSoonModules.map((mod, index) => (
+            <div key={index} className={`module-card coming-soon ${mod.badge ? 'featured' : ''}`}>
+              {mod.badge && <div className="module-badge">{mod.badge}</div>}
+              <div className="module-header">
+                <div className="module-icon">{mod.icon}</div>
+                <div className="module-info">
+                  <h3>{mod.name}</h3>
+                  <span className="module-version">{mod.version}</span>
+                </div>
+              </div>
+              <p className="module-description">{mod.description}</p>
+              <div className="module-features">
+                {mod.features.map((feature, i) => (
+                  <span key={i}>{feature}</span>
+                ))}
+              </div>
+              <div className="module-price">
+                <span className="price-dzd">{mod.priceDZD}</span>
+                <span className="price-usd">{mod.priceUSD}</span>
+              </div>
+              <div className="module-actions">
+                {mod.externalLink ? (
+                  <a href={mod.externalLink} className="btn btn-small" target="_blank" rel="noopener noreferrer">
+                    Learn More
+                  </a>
+                ) : (
+                  <button className="btn btn-small btn-outline" disabled>Notify Me</button>
+                )}
               </div>
             </div>
           ))}

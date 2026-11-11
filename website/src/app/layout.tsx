@@ -10,12 +10,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "MAB Modules - Professional Magento 2 Extensions & E-commerce Solutions Algeria",
-  description: "Leading Algerian e-commerce solutions provider. 28+ Magento 2 extensions, Yalidine shipping integration, Akeneo PIM, ETL pipelines, server deployment. Trusted by Algerian businesses for professional e-commerce development.",
+  description: "Leading Algerian e-commerce solutions provider. 29+ Magento 2 extensions, multi-courier shipping (Yalidine & more), online payment services, Yassir Cash, Gifty.dz gift cards, Akeneo PIM, ETL pipelines, and server deployment. Trusted by Algerian businesses for professional e-commerce development.",
   keywords: [
     // Primary Algerian market
     "Magento 2 Algeria",
     "e-commerce Algeria",
     "Yalidine integration",
+    "multi-courier Algeria",
     "Algerian shipping",
     "58 wilayas",
     "Yalidine Express",
@@ -25,6 +26,28 @@ export const metadata: Metadata = {
     "e-commerce development Algeria",
     "Techno Stationery",
     "Mounir Abderrahmani",
+    
+    // Shipping & Courier
+    "multi-courier shipping",
+    "courier integration Algeria",
+    "Yalidine carrier",
+    "shipping API",
+    "delivery centers Algeria",
+    "stop desk",
+    "source pickup",
+    "cash on delivery",
+    
+    // Payment services
+    "online payment Algeria",
+    "payment gateway Algeria",
+    "Yassir Cash",
+    "Yassir Cash Algeria",
+    "Gifty.dz",
+    "Gifty gift cards",
+    "gift card integration",
+    "digital payments Algeria",
+    "credit card payment",
+    "digital wallet Algeria",
     
     // Products & Services
     "Magento 2 extensions",
@@ -105,8 +128,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "MAB Modules - Professional Magento 2 Extensions for Algeria",
-    description: "28+ professional Magento 2 extensions and enterprise e-commerce solutions. Yalidine shipping, Akeneo PIM, ETL pipelines, server deployment services. Built specifically for the Algerian market.",
+    title: "MAB Modules - Professional Magento 2 Extensions & Multi-Courier Shipping Algeria",
+    description: "29+ professional Magento 2 extensions and enterprise e-commerce solutions. Multi-courier shipping (Yalidine & more), online payment services, Yassir Cash, Gifty.dz gift cards, Akeneo PIM, ETL pipelines, server deployment. Built specifically for the Algerian market.",
     url: "https://mab-modules.com",
     siteName: "MAB Modules",
     locale: "en_US",
@@ -118,13 +141,20 @@ export const metadata: Metadata = {
         height: 630,
         alt: "MAB Modules - Magento 2 Extensions for Algeria",
       },
+      {
+        url: "/assets/mab-icon.svg",
+        width: 400,
+        height: 400,
+        alt: "MAB Modules Logo",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "MAB Modules - Professional Magento 2 Extensions",
-    description: "Leading Algerian e-commerce solutions: Magento 2 extensions, Yalidine integration, Akeneo PIM, ETL pipelines, and professional services.",
+    description: "Leading Algerian e-commerce solutions: Magento 2 extensions, multi-courier shipping, online payments, Yassir Cash, Gifty.dz, Akeneo PIM, ETL pipelines, and professional services.",
     images: ["/assets/og-image.jpg"],
+    creator: "@mounirtms",
   },
   robots: {
     index: true,
@@ -139,6 +169,17 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "your-google-verification-code",
+  },
+  category: "E-commerce",
+  other: {
+    "geo.region": "DZ",
+    "geo.placename": "Algeria",
+    "geo.position": "36.7538;3.0588",
+    "icbm": "36.7538,3.0588",
+    "language": "en, fr, ar",
+    "revisit-after": "7 days",
+    "distribution": "global",
+    "rating": "general",
   },
 };
 
