@@ -237,8 +237,7 @@ export default function Modules() {
                 <span className="price-usd">{mod.priceUSD}</span>
               </div>
               <div className="module-actions">
-                <a href="https://github.com/mounirtms" className="btn btn-small" target="_blank" rel="noopener noreferrer">Learn More</a>
-                <a href="https://github.com/mounirtms" className="btn btn-small btn-outline" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <button className="btn btn-small btn-outline" disabled>Coming Soon</button>
               </div>
             </div>
           ))}
@@ -313,9 +312,7 @@ export default function Modules() {
         </div>
 
         <div className="view-all">
-          <a href="https://github.com/mounirtms" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            View All 29 Modules on GitHub
-          </a>
+          <button className="btn btn-primary" disabled>Modules Coming Soon</button>
         </div>
       </div>
     </section>

@@ -154,7 +154,6 @@ export const metadata: Metadata = {
     title: "MAB Modules - Professional Magento 2 Extensions",
     description: "Leading Algerian e-commerce solutions: Magento 2 extensions, multi-courier shipping, online payments, Yassir Cash, Gifty.dz, Akeneo PIM, ETL pipelines, and professional services.",
     images: ["/assets/og-image.jpg"],
-    creator: "@mounirtms",
   },
   robots: {
     index: true,
